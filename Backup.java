@@ -17,7 +17,7 @@ public class Backup{
     //backup the database
     public void backupDatabase(String fileName){
         try{FileWriter file= mew FileWriter(fileName){
-            
+             Statement stmt = dbConnection.createStatement();
         }}
     }
 }
