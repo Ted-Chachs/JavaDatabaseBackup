@@ -8,16 +8,16 @@ import java.util.List;
 
 public class Backup{
     //create a connection with the database
-    private Connection dbConnection;
+    private Connection storedDbConnection;
 
-    public Backup(Connection dbConnection){
-        this.dbConnection = dbConnection;
+    public Backup(Connection incomingNewConnection){
+        this.storedDbConnection = incomingNewConnection;
     }
 
     //backup the database
     public void backupDatabase(String fileName){
         try{FileWriter file= mew FileWriter(fileName){
-             Statement stmt = dbConnection.createStatement();
+             Statement stmt = storedDbConnection.createStatement();
         }}
     }
 }
